@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f2"><meta name="description" content="A free, private first look at suspicious messages. Spot common warning signs before you click.">
+  <title>Pause Before You Click — Check a suspicious message</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="#top" aria-label="Pause Before You Click home"><span class="brand-mark">p.</span><span>pause<span class="brand-light">beforeyouclick</span></span></a><nav><a href="#how">How it works</a><a href="#about">About this tool</a></nav><a class="nav-cta" href="#checker">Check a message <span>↗</span></a></header>
+  <main id="top">
+    <section class="hero"><div class="hero-copy"><div class="eyebrow"><span class="live-dot"></span> A little caution goes a long way</div><h1>That message<br>can <em>wait.</em></h1><p class="hero-sub">Something feel off? Take a breath. Check for common red flags before you click, reply, or share.</p><a class="button button-dark" href="#checker">Check a message <span>↓</span></a><div class="privacy-note"><span class="lock">▣</span> Private by design. Your message stays in your browser.</div></div>
+      <div class="hero-art" aria-label="Illustration of a message being checked before clicking"><div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div><div class="art-card"><div class="art-card-top"><span class="tiny-logo">m</span><span>Messages <i>•••</i></span></div><div class="message-pill"><div class="avatar">?</div><div><b>Unknown sender</b><small>just now</small></div></div><div class="message-lines"><span></span><span></span><span></span></div><div class="warning-tag"><span>!</span> Urgency detected</div></div><div class="magnify"><span></span></div><div class="art-sticker">Think<br>before<br>you tap <b>↗</b></div><div class="spark spark-a">✳</div><div class="spark spark-b">✳</div></div>
+    </section>
+    <section class="checker-section" id="checker"><div class="section-heading"><div><div class="eyebrow">01 <span class="slash">/</span> Quick check</div><h2>What did they send you?</h2></div><p>Paste the message below. We’ll point out patterns worth a second look.</p></div>
+      <div class="checker-grid"><div class="input-panel"><label for="message">Message to check</label><p class="field-hint">Please remove passwords, one-time codes, and personal details first.</p><textarea id="message" placeholder="Paste a suspicious text, email, or DM here…" maxlength="5000"></textarea><div class="field-meta"><span id="char-count">0 / 5,000</span><button class="text-button" id="clear">Clear text</button></div><button class="button button-green" id="check"><span class="button-icon">⌕</span> Check for red flags <span class="arrow">→</span></button><div class="examples"><span>Try a sample</span><button data-example="bank">Fake bank alert</button><button data-example="prize">Unexpected prize</button><button data-example="delivery">Delivery fee</button></div></div>
+      <div class="result-panel" id="result" aria-live="polite"><div class="empty-state"><div class="result-icon">✳</div><div class="eyebrow">Your results</div><h3>Ready when you are.</h3><p>After you check a message, you’ll see the signals we found and what you can do next.</p><div class="empty-rule"></div><div class="empty-foot"><span class="pulse"></span> Nothing is sent or saved</div></div></div></div>
+    </section>
+    <section class="how-section" id="how"><div class="how-head"><div class="eyebrow">02 <span class="slash">/</span> A quick guide</div><h2>Three little pauses.<br><em>One safer choice.</em></h2></div><div class="steps"><article><span class="step-no">01</span><div class="step-icon">✳</div><h3>Paste it in</h3><p>Share the message after removing any private details. It stays on this device.</p></article><article><span class="step-no">02</span><div class="step-icon icon-orange">⌕</div><h3>Look at the signals</h3><p>We highlight common patterns like pressure, money requests, and odd links.</p></article><article><span class="step-no">03</span><div class="step-icon icon-blue">↗</div><h3>Choose your next step</h3><p>Use the tips to verify through a contact or website you already trust.</p></article></div></section>
+    <section class="disclaimer" id="about"><span class="disclaimer-icon">i</span><div><b>A helpful nudge, not a guarantee.</b><p>This tool uses simple pattern checks. It can miss scams or flag legitimate messages. A low-risk result doesn’t mean a message is safe. When in doubt, contact the organization through its official app or a number you already know.</p></div></section>
+  </main>
+  <footer><a class="brand" href="#top"><span class="brand-mark">p.</span><span>pause<span class="brand-light">beforeyouclick</span></span></a><span>Built to help you take a beat.</span><a href="#checker">Back to the checker ↑</a></footer>
+  <script src="app.js"></script>
+</body></html>
